@@ -20,10 +20,9 @@ const Events = () => {
         <p className='md:w-1/2 md:self-center my-3'>Email: javascriptcafe@gmail.com</p>
         <p className='md:w-1/2 md:self-center my-3'>Phone: 333-000-0000</p>
         <p className='md:w-1/2 md:self-center my-3'>Sign-up sheet located next to the coffee bar</p>
-
-        <h1 className="md:self-center text-4xl font-bold my-5 md:mr-5">Upcoming Event Gatherings!</h1>
       
-        <div className='flex flex-col justify-evenly md:self-center'>
+        <div className='flex flex-col justify-evenly md:self-center md:w-2/3'>
+          <h1 className="text-4xl font-bold my-5 md:self-center">Upcoming Event Gatherings!</h1>
           <p className='text-xl my-3'><span className='font-bold'>Coding Night</span> - Thursday June 29th 7:00 PM - Midnight</p>
           <p className='text-xl my-3'><span className='font-bold'>Market Night</span> - Friday June 30th 5:00 PM - 8:00 PM</p>
         </div>
