@@ -1,0 +1,97 @@
+body {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.25rem 1.5rem;
+}
+
+.navbar_author {
+  font-size: 2.1rem;
+}
+
+.navbar_list {
+  display: flex;
+  width: 50%;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  list-style: none;
+}
+.navbar_logo {
+  width: 100%;
+}
+
+.navbar_title {
+  font-size: 2.8rem;
+}
+
+.menuicon {
+  display: none;
+  color: black;
+}
+.home-header-section {
+  display: block;
+  position: relative;
+  background-image: url("../../public/images/pour-coffee.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+}
+/* .userIcon {
+  width: 28px;
+  height: 28px;
+} */
+
+.profilepic {
+  border: none;
+  border-radius: 50%;
+  margin: 2rem auto;
+  width:70%;
+  max-width: 250px;
+  height: auto;
+  max-height: 250px;
+}
+
+
+
+@media (max-width: 700px) {
+    .navbar{
+        flex-wrap: wrap;
+    }
+
+    .navbar_list {
+        display: none;
+    }
+
+    .menuicon {
+        display: block;
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+    .navbar_list.mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .navbar_link.mobile {
+        padding: 1rem;
+    }
+    .navbar_link.mobile:hover {
+        background: #616161;
+    }
+
+}
