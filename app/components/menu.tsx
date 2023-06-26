@@ -8,8 +8,8 @@ const MenuDisplay = () => {
 
           <div className='flex flex-wrap w-full justify-around'>
               {
-                data.map((item) => (  
-                <div className='flex flex-col justify-between items-center mb-3'>
+                data.map((item,i) => (  
+                    <div key={ i} className='flex flex-col justify-between items-center mb-3'>
                     <div>
                         <h1 className='text-2xl'>{item.header}</h1>
                         {
