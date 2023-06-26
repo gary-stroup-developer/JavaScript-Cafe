@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes, { InferProps } from "prop-types";
 
 const ComponentPropTypes = {
+    key: PropTypes.number,
     name: PropTypes.string, 
     description: PropTypes.string, 
     smPrice: PropTypes.string,
@@ -11,9 +12,9 @@ const ComponentPropTypes = {
 
 type ComponentTypes = InferProps<typeof ComponentPropTypes>;
 
-const MenuItem = ({ name, description, smPrice, mdPrice, lgPrice }:ComponentTypes) => {
+const MenuItem = ({ key,name, description, smPrice, mdPrice, lgPrice }:ComponentTypes) => {
     return (
-        <div className='w-2/3 mt-6 mb-3'>
+        <div key={key} className='w-2/3 mt-6 mb-3'>
             <p className='text-lg'>{name}</p>
             <p className='max-w-sm'>{description}</p>
             <div className='flex justify-between my-2'>
