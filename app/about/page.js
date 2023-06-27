@@ -6,9 +6,9 @@ import shop from '../../public/images/coffeeShopUpstairs.jpeg';
 const About = () => {
   return (
     <div className='flex flex-col w-full p-3 items-center'>
-      <div className='flex flex-col items-center md:flex-row'>
-        <Image className="rounded-md mt-2 md:mr-2" src={about} width={350} height={300} alt="coffee shop bar"/>
-        <Image className="rounded-md mt-2 md:ml-2" src={shop} width={350} height={300} alt="upstairs to coffee shop"/>
+      <div className='flex flex-col items-center gap-2 md:flex-row'>
+        <Image className="rounded-md mt-2" src={about} width={350} height={300} alt="coffee shop bar"/>
+        <Image className="rounded-md mt-2" src={shop} width={350} height={300} alt="upstairs to coffee shop"/>
       </div>
       
       <div className='text-lg max-w-lg'>
