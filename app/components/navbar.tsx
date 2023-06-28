@@ -28,7 +28,7 @@ const NavBar = () => {
     return (
         <nav className="navbar">
             <div className="navbar_logo">
-                <Image className="logo" src={logo} width={80} height={80}/>
+                <Image className="logo" src={logo} width={80} height={80} alt="javascript cafe logo. small coffee cup with flowers"/>
             </div>
             <Link href="/"><p className="navbar_title">JavaScript Cafe</p></Link>
             <Image className="menuicon" src={menu} width={50} height={50} onClick={handleClick} alt="hamburger icon"/>
