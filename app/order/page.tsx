@@ -1,9 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
-import MenuItem from "../components/menuItem";
+import UserForm from "../components/userForm";
 
 const Order = () => {
-  const [login, setLogin] = useState<boolean>(true);
+
+  const [login, setLogin] = useState<boolean>(false);
   const [name, setName] = useState<string>("Gary");
 
   useEffect(() => {
@@ -19,7 +20,7 @@ const Order = () => {
             <p className="my-3">Hi {name},</p>
             <p>Start your order</p>
           </div>
-        ) : (<div>Redirect to login</div>)
+        ) : (<UserForm btnTitle="Login" routePage="order"/>)
       }
     </div>
     
