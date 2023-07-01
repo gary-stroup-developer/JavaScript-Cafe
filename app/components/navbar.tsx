@@ -37,15 +37,15 @@ const NavBar = () => {
                     <Link href="/about">About</Link>
                     <Link href="/events">Events</Link>
                     <Link href="/menu">Menu</Link>
-                    <Link href="order">Online Order</Link>
-                    <Link href="/user">User Profile</Link>
+                    <Link href="/order">Online Order</Link>
+                    <Link href="/user/signin/">User Profile</Link>
                 </div>
                 : <div className="navbar_list">
                     <Link href="/about">About</Link>
                     <Link href="/events">Events</Link>
                     <Link href="/menu">Menu</Link>
                     <Link href="order">Online Order</Link>
-                    <Link href="/user"><Image className="userIcon" src={user} width={28} height={28} alt="user signin icon" /></Link>
+                    <Link href="/user/signup/"><Image className="userIcon" src={user} width={28} height={28} alt="user signin icon" /></Link>
                 </div>
             }
             
